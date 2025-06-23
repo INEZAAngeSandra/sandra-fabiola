@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body bgcolor="skyblue">
+ <fieldset> 
+     <legend><U><b><h2>LOGIN FORM</h2></b></U></legend>
+    <div class="container">
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="first name">first name:</label><br><br>
+                <input type="text" id="first name" name="first name" required>
+                <div class="error-message" id="fist nameError"></div>
+            </div>
+            <div class="form-group">
+                <label for="last name">last name:</label><br><br>
+                <input type="text" id="last name" name="last name" required>
+                <div class="error-message" id="lastnameError"></div>
+                 <div class="form-group">
+            <div class="form-group">
+                <label for="gender">gender:</label><br><br>
+                <select id="gender">
+                <option value="">select....</option>
+                 <option value="male">male</option>
+                  <option value="female">female</option>
+                   <option value=" other">other</option>
+                <div class="error-message" id="genderError"></div>
+                </select>
+                 <div class="form-group"></div>
+                <label for="">email:</label><br><br>
+                <input type="email" id="email" name="email" required>
+                <div class="error-message" id="emailError"></div>
+            <div class="form-group">
+               <label for="password">Password:</label><br><br>
+                <input type="password" id="password" name="password" required><br><br>
+                <div class="error-message" id="passwordError"></div>
+            </div>
+            <button type="submit">Login</button>
+            <div class="success-message" id="formSuccess"></div>
+        </form>
+    </div>
+    <script src="script.js">
+    </script>
+    </fieldset>
+</body>
+</html>
